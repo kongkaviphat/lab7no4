@@ -1,0 +1,24 @@
+
+<head>
+    <script>
+        function countTheWord(str){
+           const str1 = str.split(" ");
+           let count =0;
+           for(let i=0 ;i<str1.length;i++){
+            console.log(str1[i]);
+            if(str1[i]==="the"||str1[i]==="The"){
+                count++;
+                
+            }
+        }
+        alert("มี the ทั้งหมด "+count+" คำ");
+    }
+
+    </script>
+</head>
+<body>
+    the eight ruler of the Fifth Dynasty in the late 25th century.<br><br>
+    <a href="#" onclick="countTheWord('the eight ruler of the Fifth Dynasty in the late 25th century')">
+    Click for count 'the'</a>
+</body>
+</html>
